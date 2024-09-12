@@ -1,0 +1,179 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+:root{
+    /* colors */
+    --clr-lime: 61 70% 52%;
+    --clr-red: 4 69% 50%;
+    --clr-white: 0 0% 100%;
+    --clr-s-100: 202 86% 94%;
+    --clr-s-300: 203 41% 72%;
+    --clr-s-500: 200 26% 54%;
+    --clr-s-700: 200 24% 40%;
+    --clr-s-900: 202 55% 16%;
+
+    /* font sizes */
+    --fs-900: 5rem;
+    --fs-800: 4rem;
+    --fs-700: 3rem;
+    --fs-600: 2rem;
+    --fs-500: 1.5rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+    --fs-200: 0.5rem;
+
+    /* font family */
+    --ff-main: "Plus Jakarta Sans", sans-serif;
+}
+
+/* ----------------- */
+/* Reset             */
+/* ----------------- */
+/* box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p{
+    margin: 0;
+    font-weight: 400;
+}
+
+/* make img easier to work with */
+img{
+    width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+select,
+input,
+textarea{
+    font: inherit;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce){
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto!important;
+    }
+}
+
+/* set up body */
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: var(--ff-main);
+    font-size: var(--fs-400);
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-s-900));
+    display: grid;
+    line-height: 1.5;
+}
+
+/* ----------------- */
+/* Utility Classes   */
+/* ----------------- */
+.flex{
+    display: flex;
+    gap: var(--gap, 1em);
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap,1em);
+}
+
+.block{
+    display: block;
+}
+
+.flow{
+    margin-block: 2em;
+}
+
+.container{
+    margin-block: 1em;
+    padding-inline: 2em;
+}
+
+.sr-only{
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: none;
+}
+
+/* colors */
+.bg-lime{background-color: hsl(var(--clr-lime));}
+.bg-red{background-color: hsl(var(--clr-red));}
+.bg-white{background-color: hsl(var(--clr-white));}
+.bg-s-100{background-color: hsl(var(--clr-s-100));}
+.bg-s-300{background-color: hsl(var(--clr-s-300));}
+.bg-s-500{background-color: hsl(var(--clr-s-500));}
+.bg-s-700{background-color: hsl(var(--clr-s-700));}
+.bg-s-900{background-color: hsl(var(--clr-s-900));}
+
+.text-lime{color: hsl(var(--clr-lime));}
+.text-red{color: hsl(var(--clr-red));}
+.text-white{color: hsl(var(--clr-white));}
+.text-s-100{color: hsl(var(--clr-s-100));}
+.text-s-300{color: hsl(var(--clr-s-300));}
+.text-s-500{color: hsl(var(--clr-s-500));}
+.text-s-700{color: hsl(var(--clr-s-700));}
+.text-s-900{color: hsl(var(--clr-s-900));}
+
+/* typography */
+.ff-main{font-family: var(--ff-main);}
+
+.fs-900{font-size: var(--fs-900);}
+.fs-800{font-size: var(--fs-800);}
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+.fs-300{font-size: var(--fs-300);}
+.fs-200{font-size: var(--fs-200);}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600{
+    line-height: 1.1;
+}
+
+.letter-spacing-1{letter-spacing: 4.75px;}
+.letter-spacing-2{letter-spacing: 3.75px;}
+.letter-spacing-3{letter-spacing: 2.75px;}
+
+.bold{font-weight: 700;}
+
+.text-center{text-align: center;}
+
+.uppercase{text-transform: uppercase;}
+
+.capitalize{text-transform: capitalize;}
+
+
+/* ----------------- */
+/* Mortgage          */
+/* ----------------- */
