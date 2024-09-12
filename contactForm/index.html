@@ -16,6 +16,73 @@
     <link rel="manifest" href="./assets/icons/site.webmanifest">
 </head>
 <body>
-    
+    <section id="form" class="container">
+        <form class="form" action="" method="post">
+            <h1 class="bold fs-600">Contact Us</h1>
+
+            <div class="input-boxes">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name">
+                <p class="error-message">This field is required</p>
+            </div>
+
+            <div class="input-boxes">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name">
+                <p class="error-message">This field is required</p>
+            </div>
+
+            <div class="input-boxes">
+                <label for="email">Email Address</label>
+                <input type="email" id="email">
+                <p class="error-message">Please enter a valid email address</p>
+            </div>
+
+            <div class="input-boxes">
+                <fieldset>
+                    <legend>Query Type</legend>
+
+                    <div class="radio-group">
+                        <input type="radio" name="query" id="general">
+                        <label for="general">General Enquiry</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="query" id="support">
+                        <label for="support">Support Request</label>
+                    </div>
+
+                    <p class="error-message">Please select a query type</p>
+                </fieldset>
+            </div>
+
+            <div class="input-boxes">
+                <label for="message">Message</label>
+                <textarea name="message" id="message"></textarea>
+                <p class="error-message">This field is required</p>
+            </div>
+
+            <div class="input-boxes">
+                <label for="consent">
+                    <input type="checkbox" id="consent">
+                    I consent to being contacted by the team
+                </label>
+                <p class="error-message">To submit this form, please consent to being contacted.</p>
+            </div>
+
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div id="success" class="success">
+        <div class="success-header">
+            <img src="./assets/img/icon-success-check.svg" alt="">
+            <h1>Message Sent!</h1>
+            
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
