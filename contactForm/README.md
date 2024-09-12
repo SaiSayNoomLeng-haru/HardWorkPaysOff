@@ -9,9 +9,9 @@
 - desktop(1440px)
 
 ## Snapshots
-[desktop](./assets/snapshots/desktop.png)
-[mobile](./assets/snapshots/mobile.png)
-[error](./assets/snapshots/error.png)
+![desktop](./assets/snapshots/desktop.png)
+![mobile](./assets/snapshots/mobile.png)
+![error](./assets/snapshots/error.png)
 
 ## Built With
 - CSS custom Properties
