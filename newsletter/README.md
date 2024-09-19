@@ -14,7 +14,17 @@
 - See hover and focus states for all interactive elements on the page
 
 # Snapshots
+![desktop](./assets/snapshots/desktop.png)
+![desktop-success](./assets/snapshots/desktop-success.png)
+![mobile](./assets/snapshots/mobile.png)
+![mobile-error](./assets/snapshots/mobile-error.png)
 
 # Built With
+- CSS custom properties
+- flexbox
+- grid
+- JS
 
 # Notes
+- bind()
+- class OOP
