@@ -1,0 +1,190 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+:root{
+    /* colors */
+    --clr-red: 14 86% 42;
+    --clr-green: 159 69% 38%;
+    --clr-rose-50: 20 50% 98%;
+    --clr-rose-100: 13 31% 94%;
+    --clr-rose-300: 14 25% 72%;
+    --clr-rose-400: 7 20% 60%;
+    --clr-rose-500: 12 20% 44%;
+    --clr-rose-900: 14 65% 9%;
+    --clr-white: 0 0% 100%;
+    --clr-black: 0 0% 7%;
+
+    /* font-sizes */
+    --fs-900: 9rem;
+    --fs-800: 7rem;
+    --fs-700: 6.5rem;
+    --fs-600: 4.5rem;
+    --fs-500: 2.5rem;
+    --fs-400: 1rem;
+    --fs-300: 0.875rem;
+    --fs-200: 0.5rem;
+
+    /* font family */
+    --ff-main: "Red Hat Text", sans-serif;
+}
+
+/* ----------------- */
+/* Reset             */
+/* ----------------- */
+/* box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+/* font-weight */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-weight: 400;
+}
+
+/* make img easier to work with */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* make form elements easier to work with */
+button,
+select,
+input,
+textarea{
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01!important;
+        scroll-behavior: auto!important;
+    }
+}
+
+/* set up body */
+body{
+    min-height: 100vh;
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-black));
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-family: var(--ff-main);
+    font-size: var(--fs-400);
+}
+
+/* ----------------- */
+/* Utility Classes   */
+/* ----------------- */
+.flex{
+    display: flex;
+    gap: var(--gap, 1em);
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap, 1em);
+}
+
+.block{
+    display: block;
+}
+
+.container{
+    margin-block: 1em;
+    padding-inline: 2em;
+}
+
+.flow{
+    margin-block: 2em;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* colors */
+.bg-red{background-color: hsl(var(--clr-red));}
+.bg-green{background-color: hsl(var(--clr-green));}
+.bg-rose-50{background-color: hsl(var(--clr-rose-50));}
+.bg-rose-100{background-color: hsl(var(--clr-rose-100));}
+.bg-rose-300{background-color: hsl(var(--clr-rose-300));}
+.bg-rose-400{background-color: hsl(var(--clr-rose-400));}
+.bg-rose-500{background-color: hsl(var(--clr-rose-500));}
+.bg-rose-900{background-color: hsl(var(--clr-rose-900));}
+.bg-white{background-color: hsl(var(--clr-white));}
+.bg-black{background-color: hsl(var(--clr-black));}
+
+.text-red{color: hsl(var(--clr-red));}
+.text-green{color: hsl(var(--clr-green));}
+.text-rose-50{color: hsl(var(--clr-rose-50));}
+.text-rose-100{color: hsl(var(--clr-rose-100));}
+.text-rose-300{color: hsl(var(--clr-rose-300));}
+.text-rose-400{color: hsl(var(--clr-rose-400));}
+.text-rose-500{color: hsl(var(--clr-rose-500));}
+.text-rose-900{color: hsl(var(--clr-rose-900));}
+.text-white{color: hsl(var(--clr-white));}
+.text-black{color: hsl(var(--clr-black));}
+
+/* typography */
+.ff-main{font-family: var(--ff-main);}
+
+.fs-900{font-size: var(--fs-900);}
+.fs-800{font-size: var(--fs-800);}
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+.fs-300{font-size: var(--fs-300);}
+.fs-200{font-size: var(--fs-200);}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600{
+    line-height: 1.1;
+}
+
+.uppercase{text-transform: uppercase;}
+
+.text-center{text-align: center;}
+
+.bold-1{font-weight: 900;}
+.bold-2{font-weight: 600;}
+
+.letter-spacing{letter-spacing: 4.75px;}
+.letter-spacing{letter-spacing: 3.75px;}
+.letter-spacing{letter-spacing: 2.75px;}
