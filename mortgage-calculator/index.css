@@ -123,6 +123,13 @@ body{
     border: none;
 }
 
+.divider{
+    width: 90%;
+    height: 1px;
+    margin: 1em auto;
+    background-color: hsl(var(--clr-s-500));
+}
+
 /* colors */
 .bg-lime{background-color: hsl(var(--clr-lime));}
 .bg-red{background-color: hsl(var(--clr-red));}
@@ -177,3 +184,170 @@ body{
 /* ----------------- */
 /* Mortgage          */
 /* ----------------- */
+.input{
+    flex-direction: column;
+    color: hsl(var(--clr-s-700));
+    font-weight: 700;
+    padding: 1em;
+}
+
+.input-header{
+    flex-direction: column;
+    --gap: .5em;
+}
+
+.clear-btn{
+   text-decoration: underline;
+   color: hsl(var(--clr-s-500));
+   cursor: pointer;
+   font-size: var(--fs-300);
+}
+
+.input-boxes{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.input-boxes input{
+    text-indent: 1em;
+    outline: none;
+    border: 1px solid hsl(var(--clr-s-500));
+    border-radius: 5px;
+    padding-block: .3em;
+}
+
+.input-boxes label::after{
+    content: ' *';
+    color: hsl(var(--clr-red));
+}
+
+.input-boxes input:focus{
+    border: 1px solid hsl(var(--clr-s-900));
+}
+
+.input-boxes input.error{
+    border: 1px solid hsl(var(--clr-red));
+}
+
+.radio-groups fieldset{
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.radio{
+    padding: .2em;
+    margin-top: 1em;
+}
+
+.error-message{
+    display: none;
+}
+
+.calculate-btn{
+    display: flex;
+    justify-content: center;
+    gap: .3em;
+    padding-block: 1em;
+    border: none;
+    background-color: hsl(var(--clr-lime));
+    border-radius: 20px;
+    font-weight: 700;
+    color: hsl(var(--clr-s-900));
+    font-size: var(--fs-400);
+}
+
+.calculate-btn img{
+    width: 1em;
+    display: inline;
+}
+
+.calculate-btn:hover,
+.calculate-btn:focus{
+    background-color: hsl(var(--clr-lime) / .5);
+}
+
+/* output */
+.output{
+    background-color: hsl(var(--clr-s-900));
+}
+
+.info{
+    padding: 1em;
+}
+
+.info,
+.result{
+    height: 60vh;
+}
+
+.info{
+    display: none;
+}
+
+/* result */
+.result{
+    display: grid;
+    place-content: center;
+    display: block;
+}
+
+.result .desc{
+    padding: 1em;
+}
+
+.result .desc h1{
+    margin-bottom: .4em;
+}
+
+.payment-result{
+    background-color: #000000;
+    margin: 2em;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0px -5px 0px hsl(var(--clr-lime));
+}
+
+@media (min-width: 35em){
+    .mortgage{
+        grid-template-columns: 1fr 1fr;
+        place-content: center;
+    }
+}
+
+@media (min-width: 70em){
+    section{
+        width: 80vw;
+        margin: auto;
+        box-shadow: 10px 10px 20px #000;
+       
+        border-radius: 20px;
+    }
+
+    .input{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .input-boxes:nth-child(2),
+    .radio-groups,
+    .calculate-btn{
+        grid-column: 1 / -1;
+    }
+
+    .calculate-btn{
+        max-height: 3em;
+    }
+
+    .output{
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-bottom-left-radius: 80px;
+    }
+
+    .output .info{
+        padding: 4em;
+    }
+}
+
