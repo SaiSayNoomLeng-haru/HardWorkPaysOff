@@ -1,0 +1,184 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+:root{
+    /* colors */
+    --clr-red: 7 99% 70%;
+    --clr-yellow: 51 100% 49%;
+    --clr-photo: 198 62% 26%;
+    --clr-footer: 168 34% 41%;
+    --clr-graphic: 167 40% 24%;
+    --clr-white: 0 0% 100%;
+    --clr-blue: 210 4% 67%;
+    --clr-gray-1: 232 10% 55%;
+    --clr-gray-2: 213 9% 39%;
+    --clr-gray-3: 212 27% 19%;
+
+    /* font sizes */
+    --fs-900: 6rem;
+    --fs-800: 5.5rem;
+    --fs-700: 5rem;
+    --fs-600: 4rem;
+    --fs-500: 1.8rem;
+    --fs-400: 1.2rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font family */
+    --ff-main: "Fraunces", system-ui;
+    --ff-barlow: "Barlow", system-ui;
+}
+
+/* ----------------- */
+/* Reset             */
+/* ----------------- */
+/* box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+picture{
+    margin: 0;
+}
+
+/* make img easier to work with */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* make form elements easier to work with */
+input,
+textarea,
+select,
+button{
+    font: inherit;
+}
+
+/* reduce animation for people who've turned them off */
+@media (perfers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after{
+        animation-iteration-count: 1!important;
+        animation-duration: 0.01ms!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto!important;
+    }
+}
+
+/* set up body */
+body{
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-gray-3));
+    font-size: var(--fs-400);
+    font-family: var(--ff-main);
+    overflow-x: hidden;
+    line-height: 1.5;
+    display: grid;
+}
+
+/* ----------------- */
+/* Utility Classes   */
+/* ----------------- */
+.flex{
+    display: flex;
+    gap: var(--gap, 1em);
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap, 1em);
+}
+
+.block{
+    display: block;
+}
+
+.container{
+    margin-block: 1em;
+    padding-inline: 1em;
+}
+
+.flow{
+    margin-block: 2em;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* colors */
+.bg-red{background-color: hsl(var(--clr-red));}
+.bg-yellow{background-color: hsl(var(--clr-yellow));}
+.bg-graphic{background-color: hsl(var(--clr-graphic));}
+.bg-photo{background-color: hsl(var(--clr-photo));}
+.bg-footer{background-color: hsl(var(--clr-footer));}
+.bg-white{background-color: hsl(var(--clr-white));}
+.bg-blue{background-color: hsl(var(--clr-blue));}
+.bg-gray-1{background-color: hsl(var(--clr-gray-1));}
+.bg-gray-2{background-color: hsl(var(--clr-gray-2));}
+.bg-gray-3{background-color: hsl(var(--clr-gray-3));}
+
+.text-red{color: hsl(var(--clr-red));}
+.text-yellow{color: hsl(var(--clr-yellow));}
+.text-graphic{color: hsl(var(--clr-graphic));}
+.text-photo{color: hsl(var(--clr-photo));}
+.text-footer{color: hsl(var(--clr-footer));}
+.text-white{color: hsl(var(--clr-white));}
+.text-blue{color: hsl(var(--clr-blue));}
+.text-gray-1{color: hsl(var(--clr-gray-1));}
+.text-gray-2{color: hsl(var(--clr-gray-2));}
+.text-gray-3{color: hsl(var(--clr-gray-3));}
+
+/* typography */
+.ff-main{font-family: var(--ff-main);}
+.ff-barlow{font-family: var(--ff-barlow);}
+
+.fs-900{font-size: var(--fs-900);}
+.fs-800{font-size: var(--fs-800);}
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+.fs-300{font-size: var(--fs-300);}
+.fs-200{font-size: var(--fs-200);}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600{
+    line-height: 1.1;
+}
+
+.bold-1{font-weight: 900;}
+.bold-2{font-weight: 700;}
+.bold-3{font-weight: 600;}
+
+.uppercase{text-transform: uppercase;}
+
+.text-center{text-align: center;}
+
+/* ----------------- */
+/* Sunny Agency Page */
+/* ----------------- */
