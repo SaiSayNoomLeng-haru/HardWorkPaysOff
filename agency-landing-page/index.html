@@ -18,11 +18,165 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+    <main>
+        <!-- header -->
+        <header class="ff-barlow text-white header" id="header">
+            <div class="about">
+                <a href="#index.html" class="logo bold-1">
+                    <img src="./assets/img/logo.svg" alt="logo svg">
+                </a>
+    
+                <div class="hamburger" id="mobile-nav-toggle" aria-expanded="false"></div>
+    
+                <!-- nav bar -->
+                <nav class="navbar" id="navbar" visible="false">
+                    <ul class="nav-menu">
+                        <li class="nav-items"><a href="#header" class="nav-links">About</a></li>
+                        <li class="nav-items"><a href="#services" class="nav-links">Services</a></li>
+                        <li class="nav-items"><a href="#testimonials" class="nav-links">Testimonials</a></li>
+                        <li class="nav-items"><a href="#footer" class="nav-links">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+
+            <!-- hero -->
+            <div class="hero" id="hero">
+                <h1 class="uppercase fs-600 ff-main text-center">we are creatives</h1>
+                <img src="./assets/img/icon-arrow-down.svg" alt="arrow down" style="margin: 0 auto;">
+            </div>
+        </header>
+
+        <!-- services -->
+        <div class="services" id="services">
+            <!-- Transform -->
+            <div class="service-transform">
+                <div class="service-img-transform">
+                    <img id="transform-img" src="./assets/img/mobile/image-transform.jpg" alt="egg">
+                </div>
+                <div class="service-desc-transform text-center">
+                    <h1>Transform your brand</h1>
+                    <p class="text-gray-1 ff-barlow bold-3">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <button class="learn-more-btn">learn more</button>
+                </div>
+            </div>
+
+            <!-- stand out -->
+            <div class="service-stand-out">
+                <div class="service-img-stand-out">
+                    <img id="stand-out-img" src="./assets/img/mobile/image-stand-out.jpg" alt="stand out">
+                </div>
+                <div class="service-desc-stand-out text-center">
+                    <h1>Stand out to the right audience</h1>
+                    <p class="text-gray-1 ff-barlow bold-3">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+                    <button class="learn-more-btn">learn more</button>
+                </div>
+            </div>
+
+            <div class="graphic-photo">
+                <!-- Graphic -->
+            <div class="service-graphic">
+                <img id="graphic-img" src="./assets/img/mobile/image-graphic-design.jpg" alt="image-photography">
+                <div class="desc text-center text-graphic container">
+                    <h1>Graphic Design</h1>
+                    <p class="ff-barlow bold-3 flow">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients' attention.</p>
+                </div>
+            </div>
+
+            <!-- Photography -->
+            <div class="service-photography">
+                <img id="photo-img" src="./assets/img/mobile/image-photography.jpg" alt="image-photography">
+                <div class="desc text-center text-photo container">
+                    <h1>Photography</h1>
+                    <p class="ff-barlow bold-3 flow">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+        <!-- /services -->
+
+        <!-- testimonials -->
+        <div class="testimonial" id="testimonials">
+            <h1>client testimonials</h1>
+            <!-- testimonial container emily -->
+            <div>
+                <div class="testimonial-container text-center">
+                    <div class="testimonial-img">
+                        <img src="./assets/img/image-emily.jpg " alt="emily">
+                    </div>
+                    <div class="testimonial-content text-gray-2">
+                        We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
+                    </div>
+                    <div class="testimonial-footer">
+                        <h3>Emily R.</h3>
+                        <p class="text-gray-1">Marketing Director</p>
+                    </div>
+                </div>
+    
+                <!-- testimonial container Thomas -->
+                <div class="testimonial-container text-center">
+                    <div class="testimonial-img">
+                        <img src="./assets/img/image-thomas.jpg " alt="emily">
+                    </div>
+                    <div class="testimonial-content text-gray-2">
+                      Sunnyside's enthusiasm coupled with their keen interest in our brand's success made it a satisfying and enjoyable experience.
+                    </div>
+                    <div class="testimonial-footer">
+                        <h3>Thomas S.</h3>
+                        <p class="text-gray-1">Chief Operating Officer</p>
+                    </div>
+                </div>
+    
+                <!-- testimonial container Jennie -->
+                <div class="testimonial-container text-center">
+                    <div class="testimonial-img">
+                        <img src="./assets/img/image-jennie.jpg " alt="emily">
+                    </div>
+                    <div class="testimonial-content text-gray-2">
+                     Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+                    </div>
+                    <div class="testimonial-footer">
+                        <h3>Jennie F.</h3>
+                        <p class="text-gray-1">Business Owner</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <!-- /testimonials -->
+
+        <!-- photo grid -->
+        <div class="photo-grid">
+            <img src="./assets/img/mobile/image-gallery-milkbottles.jpg" alt="milk bottle">
+            <img src="./assets/img/mobile/image-gallery-orange.jpg" alt="orange">
+            <img src="./assets/img/mobile/image-gallery-cone.jpg" alt="cone">
+            <img src="./assets/img/mobile/image-gallery-sugar-cubes.jpg" alt="sugar cubes">
+        </div>
+
+
+        <!-- footer -->
+        <div class="footer" id="footer">
+            <h1>sunny side</h1>
+            <div class="footer-links">
+                <a href="#header">About</a>
+                <a href="#services">Services</a>
+                <a href="#testimonials">Testimonials</a>
+            </div>
+            <div class="footer-icon-links">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+        <!-- / footer -->
+    </main>
     
 
-asdfasdfasdf
 
 
-    <script src="index.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

@@ -13,6 +13,9 @@
 - Hover
 
 # Snapshots
+![desktop](./assets/snapshot/desktop.png)
+![mobile](./assets/snapshot/mobile.png)
+![mobile nav](./assets/snapshot/mobile%20nav.png)
 
 # Built With
 - CSS custom properties
@@ -20,3 +23,4 @@
 - Grid
 
 # What I learnt
+- window doesn't need 'this' in constructor
