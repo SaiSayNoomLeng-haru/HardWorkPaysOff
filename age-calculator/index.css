@@ -16,11 +16,12 @@
     --fs-900: 9rem;
     --fs-800: 7.5rem;
     --fs-700: 5rem;
-    --fs-600: 4rem;
+    --fs-600: clamp(3rem, 8vw + 1rem, 4rem);
     --fs-500: 3rem;
     --fs-400: 2rem;
     --fs-300: 1.5rem;
     --fs-200: 1rem;
+    --fs-100: .5rem;
 
     /* font family */
     --ff-main: "Poppins", sans-serif;
@@ -82,12 +83,14 @@ input{
 /* set up body */
 body{
     min-height: 100vh;
-    background-color: hsl(var(--clr-white));
+    background-color: hsl(var(--clr-gray));
     color: hsl(var(--clr-dark));
     overflow-x: hidden;
     line-height: 1.5;
     font-family: var(--ff-main);
     font-size: var(--fs-400);
+    display: grid;
+    place-items: center;
 }
 
 /* ----------------- */
@@ -170,6 +173,8 @@ body{
 .uppercase{text-transform: uppercase;}
 
 .text-center{text-align: center;}
+
+.letter-spacing-1{letter-spacing: 4.75px;}
 
 /* ----------------- */
 /* Components        */
