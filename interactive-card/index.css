@@ -1,0 +1,171 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+:root{
+    /* colors */
+    --clr-red: 0 100% 66%;
+    --clr-white: 0 0% 100%;
+    --clr-violet: 270 3% 87%;
+    --clr-light-violet: 279 6% 55%;
+    --clr-dark-violet: 278 68% 11%;
+    --linear-gradient: linear-gradient(hsl(249, 99%, 64%) hsl(278, 94%, 30%));
+
+    /* font sizes */
+    --fs-900: 8rem;
+    --fs-800: 6rem;
+    --fs-700: 4.75rem;
+    --fs-600: 3.5rem;
+    --fs-500: 2rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+
+    /* font family */
+    --ff-main: "Space Grotesk", sans-serif;
+}
+
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+
+/* box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+picture,
+figure{
+    margin: 0;
+}
+
+/* make img easier to work with */
+img,
+picture{
+    display: block;
+    max-width: 100%;
+}
+
+/* make form elements easier to work with */
+input,
+select,
+textarea,
+button{
+    font: inherit;
+}
+
+/* remove animations for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto!important;
+    }
+}
+
+/* set up body */
+body{
+    min-width: 100vh;
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark-violet));
+    font-family: var(--ff-main);
+    font-size: var(--fs-400);
+    overflow-x: hidden;
+    line-height: 1.5;
+}
+
+/* ----------------- */
+/* Utility Classes   */
+/* ----------------- */
+.flex{
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap, 1rem);
+}
+
+.d-block{
+    display: block;
+}
+
+.container{
+    margin-block: 1rem;
+    padding-inline: 1rem;
+}
+
+.flow > * + *{
+    margin-top: var(--flow-space, 2rem);
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* colors */
+.bg-red{background-color: hsl(var(--clr-red));}
+.bg-white{background-color: hsl(var(--clr-white));}
+.bg-violet{background-color: hsl(var(--clr-violet));}
+.bg-light-violet{background-color: hsl(var(--clr-light-violet));}
+.bg-dark-violet{background-color: hsl(var(--clr-dark-violet));}
+.bg-gradient{background-image: var(--linear-gradient);}
+
+.text-red{color: hsl(var(--clr-red));}
+.text-white{color: hsl(var(--clr-white));}
+.text-violet{color: hsl(var(--clr-violet));}
+.text-light-violet{color: hsl(var(--clr-light-violet));}
+.text-dark-violet{color: hsl(var(--clr-dark-violet));}
+
+/* typography */
+.ff-main{font-family: var(--ff-main);}
+
+.fs-900{font-size: var(--fs-900);}
+.fs-800{font-size: var(--fs-800);}
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+.fs-300{font-size: var(--fs-300);}
+.fs-200{font-size: var(--fs-200);}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600{
+    line-height: 1.1;
+}
+
+.bold-1{font-weight: 700;}
+.bold-2{font-weight: 500;}
+
+.letter-spacing-1{letter-spacing: 4.75px;}
+
+.uppercase{text-transform: uppercase;}
+
+.text-center{text-align: center;}
+
+/* ----------------- */
+/* Components        */
+/* ----------------- */
