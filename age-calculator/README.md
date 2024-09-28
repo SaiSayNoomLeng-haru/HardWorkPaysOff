@@ -21,7 +21,19 @@
 - **Bonus**: See the age numbers animate to their final number when the form is submitted
 
 # Built With
+- CSS Custom Properties
+- Flexbox
+- Grid
+- JS OOP
 
 # Snapshots
+![desktop](./assets/snapshots/desktop.png)
+![mobile](./assets/snapshots/mobile.png)
+![empty-error-state](./assets/snapshots/empty-error-state.png)
+![invalid-date-input](./assets/snapshots/invalid-date-error.png)
+![result](./assets/snapshots/result.png)
 
 # What I larnt
+- date different that could output negative and positive
+- adjust date for negative values output
+- aria invalid for error message
