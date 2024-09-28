@@ -18,7 +18,48 @@
     <link rel="manifest" href="./assets/icons/site.webmanifest">
 </head>
 <body>
-    
+    <main class="main flow" id="main">
+        <!-- aside -->
+        <aside class="col-left" role="complementary">
+            <!-- <img src="./assets/img/bg-main-mobile.png" alt="gradient background" aria-label="left empty column"> -->
+        </aside>
+
+        <!-- form article -->
+        <article class="col-right container" role="form">
+            <form action="" class="form container" autocomplete="off">
+                <div class="input-boxes flex">
+                    <label for="name" class="uppercase bold-1" >Cardholder name</label>
+                    <input type="text" name="name" id="name" placeholder="e.g.Jane Appleaseed" aria-label="cardholder name" tabindex="0">
+                </div>
+
+                <div class="input-boxes flex">
+                    <label for="number" class="uppercase bold-1" >Card Number</label>
+                    <input type="number" inputmode="numeric" name="number" id="number" placeholder="e.g. 1234 5678 9123 0000" aria-label="card number" tabindex="0">
+                </div>
+
+                <div class="input-boxes">
+                    <label class="uppercase bold-1" >EXP. Date (mm/yy)</label>
+                    <input type="number" name="month" id="month" placeholder="MM" aria-label="experie month" tabindex="0">
+                    <input type="number" name="year" id="year" placeholder="YY" aria-label="experie year" tabindex="0">
+                </div>
+
+                <div class="input-boxes flex">
+                    <label for="cvv" class="uppercase bold-1">CVV</label>
+                    <input type="number" name="cvv" id="cvv" placeholder="e.g. 123" tabindex="0">
+                </div>
+
+                <button type="submit" class="submit-btn uppercase text-center bg-dark-violet text-white bold-1 letter-spacing-2">confirm</button>
+            </form>
+        </article>
+        
+        <!-- card images -->
+        <div class="card-1">
+           <img src="./assets/img/bg-card-front.png" alt="Credit Card Front" aria-label="Front side of Credit Card">
+        </div>
+        <div class="card-2">
+            <img src="./assets/img/bg-card-back.png" alt="Credit Card Back" aria-label="Back side of Credit Card">
+        </div>
+    </main>
 
     <script src="app.js"></script>
 </body>

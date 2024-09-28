@@ -53,7 +53,7 @@ figure{
 img,
 picture{
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 /* make form elements easier to work with */
@@ -161,6 +161,7 @@ body{
 .bold-2{font-weight: 500;}
 
 .letter-spacing-1{letter-spacing: 4.75px;}
+.letter-spacing-2{letter-spacing: 1.75px;}
 
 .uppercase{text-transform: uppercase;}
 
@@ -169,3 +170,9 @@ body{
 /* ----------------- */
 /* Components        */
 /* ----------------- */
+.submit-btn{
+    height: 100%;
+    border: 0;
+    border-radius: 1em;
+    margin-block: 1em;
+}
