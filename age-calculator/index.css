@@ -1,0 +1,176 @@
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+
+:root{
+    /* colors */
+    --clr-purple: 259 100% 65%;
+    --clr-red: 0 100% 67%;
+    --clr-white: 0 0% 100%;
+    --clr-off-white: 0 0% 97%;
+    --clr-light: 0 0% 86%;
+    --clr-gray: 0 1% 44%;
+    --clr-dark: 0 0% 8%;
+
+    /* font sizes */
+    --fs-900: 9rem;
+    --fs-800: 7.5rem;
+    --fs-700: 5rem;
+    --fs-600: 4rem;
+    --fs-500: 3rem;
+    --fs-400: 2rem;
+    --fs-300: 1.5rem;
+    --fs-200: 1rem;
+
+    /* font family */
+    --ff-main: "Poppins", sans-serif;
+}
+
+
+
+/* ----------------- */
+/* Reset             */
+/* ----------------- */
+
+/* box sizing */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
+/* make img easier to work with */
+img,
+picture,
+figure{
+    max-width: 100%;
+    display: block;
+}
+
+/* make form elements easier to work with */
+button,
+textarea,
+select,
+input{
+    font: inherit;
+}
+
+/* remove animation for people who've turned them off */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after{
+        animation-duration: 0.01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: 0.01ms!important;
+        scroll-behavior: auto!important;
+    }
+}
+
+/* set up body */
+body{
+    min-height: 100vh;
+    background-color: hsl(var(--clr-white));
+    color: hsl(var(--clr-dark));
+    overflow-x: hidden;
+    line-height: 1.5;
+    font-family: var(--ff-main);
+    font-size: var(--fs-400);
+}
+
+/* ----------------- */
+/* Utility Classes   */
+/* ----------------- */
+.flex{
+    display: flex;
+    gap: var(--gap, 1em);
+}
+
+.grid{
+    display: grid;
+    gap: var(--gap, 1em);
+}
+
+.d-block{
+    display: block;
+}
+
+.container{
+    margin-block: 1rem;
+    padding-inline: 2rem;
+}
+
+.flow > * + *{
+    margin-top: var(--flow-space, 1rem);
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/* colors */
+.bg-purple{background-color: hsl(var(--clr-purple));}
+.bg-red{background-color: hsl(var(--clr-red));}
+.bg-white{background-color: hsl(var(--clr-white));}
+.bg-off-white{background-color: hsl(var(--clr-off-white));}
+.bg-light{background-color: hsl(var(--clr-light));}
+.bg-gray{background-color: hsl(var(--clr-gray));}
+.bg-dark{background-color: hsl(var(--clr-dark));}
+
+.text-purple{color: hsl(var(--clr-purple));}
+.text-red{color: hsl(var(--clr-red));}
+.text-white{color: hsl(var(--clr-white));}
+.text-off-white{color: hsl(var(--clr-off-white));}
+.text-light{color: hsl(var(--clr-light));}
+.text-gray{color: hsl(var(--clr-gray));}
+.text-dark{color: hsl(var(--clr-dark));}
+
+/* typography */
+.ff-main{font-family: var(--ff-main);}
+
+.fs-900{font-size: var(--fs-900);}
+.fs-800{font-size: var(--fs-800);}
+.fs-700{font-size: var(--fs-700);}
+.fs-600{font-size: var(--fs-600);}
+.fs-500{font-size: var(--fs-500);}
+.fs-400{font-size: var(--fs-400);}
+.fs-300{font-size: var(--fs-300);}
+.fs-200{font-size: var(--fs-200);}
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600,
+.fs-500{
+    line-height: 1.1;
+}
+
+.bold-1{font-weight: 800;}
+.bold-2{font-weight: 700;}
+
+.uppercase{text-transform: uppercase;}
+
+.text-center{text-align: center;}
+
+/* ----------------- */
+/* Components        */
+/* ----------------- */
