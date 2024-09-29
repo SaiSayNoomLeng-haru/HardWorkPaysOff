@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="manage business and marketing company">
-    <title>Manage Landing Page</title>
+    <title>Manage Landing Page Sign Up Form</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="app.css">
     <!-- google font -->
@@ -45,89 +45,56 @@
             </nav>
 
             <!-- get started -->
-            <a href="" aria-label="sign up" class="sign-up-btn bg-orange text-white bold-2">Get Started</a>
+            <a href="sign-up-form.html" aria-label="sign up" class="sign-up-btn bg-orange text-white bold-2" id="sign-up-btn">Get Started</a>
         </header>
 
-        <!-- hero -->
-        <section class="hero container flex" id="hero">
-            <!-- article -->
-            <article role="article" class="article-content flow flex">
-                <h1 class="text-blue bold-1 fs-900 text-center" aria-label="Manage Intro Page Title">Bring everyone together to build better products.</h1>
-                <p class="text-accent text-center">Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+        <!-- success subscription -->
+        <section class="sign-up">
+           <form action=""  class="sign-up-form container" autocomplete="off">
+            <h1 class="text-orange bold-1 fs-900 text-center" aria-label="Sign up form">Sign Up Now!</h1>
 
-                <a href="" aria-label="sign up" class="sign-up-btn bg-orange text-white bold-2">Get Started</a>
-            </article>
-
-            <!-- aside -->
-            <aside role="complementary" class="hero-illustration">
-                <img src="./assets/img/illustration-intro.svg" alt="">
-            </aside>
-        </section>
-
-        <!-- about -->
-        <section class="about flex" id="about">
-            <!-- left col -->
-            <div class="col-left flow">
-                <h1 class="text-blue bold-1 fs-800 text-center" aria-label="About Manage">What's different about Manage?</h1>
-                <p class="text-accent text-center">Manage provides all the functionality your team needs, without the complexity. Our software is tailor-made for modern digital product teams.</p>
+            <div class="input-boxes flex">
+                <label for="name" class="text-blue bold-1 " >Name</label>
+                <input type="text" id="name" name="name" aria-label="name" aria-required="true">
+                <p class="form-err">This field cannot be empty.</p>
             </div>
 
-            <!-- right col -->
-            <div class="col-right flex">
-               <div class="tablists">
-                    <p class="tabs bg-orange text-white">01</p>
-                    <h3 class="tabs-title fs-300 bold-1 bg-pink text-center text-blue">Track company-wide progress</h3>
-                    <p class="tabs-desc text-accent">See how your day-to-day tasks fit into the wider vision. Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.</p>
-               </div>
-
-                <div class="tablists">
-                    <p class="tabs bg-orange text-white">02</p>
-                    <h3 class="tabs-title fs-300 bold-1 bg-pink text-center text-blue">Advanced built-in reports</h3>
-                    <p class="tabs-desc text-accent">Set internal delivery estimates and track progress toweard company goals. Our customisable dashboard helps you build out the reports you need to keep key stakeholders informed.</p>
-                </div>
-
-                <div class="tablists">
-                    <p class="tabs bg-orange text-white">03</p>
-                    <h3 class="tabs-title fs-300 bold-1 bg-pink text-center text-blue">Everything you need in one place</h3>
-                    <p class="tabs-desc text-accent">Stop jumping from one service to another to communicate, store files, tract tasks and share documents. Manage offers an all-in-one team productivity solution.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- testimonials -->
-        <section class="testimonial container" id="testimonial">
-            <h1 class="text-blue bold-1 fs-800 text-center" aria-label="Reviews from customer">What they've said</h1>
-
-            <div class="testimonial-container flow" id="testimonial-container">
-                <!-- testimonial -->
-                <!-- <div class="testimonial">
-                    <img src="./assets/img/avatar-ali.png" alt="ali photo">
-                    <div class="testimonial-content">
-                        <h1 class="text-blue bold-1 fs-500 text-center" aria-label="About Manage">Ali Bravo</h1>
-                        <blockquote>
-                        <p class="text-accent text-center">"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
-                        </blockquote>
-                    </div>
-                </div> -->
+            <div class="input-boxes flex">
+                <label for="email" class="text-blue bold-1 " >Email</label>
+                <input type="email" id="email" name="email" aria-label="email" aria-required="true">
+                <p class="form-err">This field cannot be empty.</p>
             </div>
 
-            <div class="tab-btn-group flex">
-                <button tabindex="0" class="tab-btn active"><span class="sr-only">review menu</span></button>
-                <button tabindex="0" class="tab-btn"><span class="sr-only">review menu</span></button>
-                <button tabindex="0" class="tab-btn"><span class="sr-only">review menu</span></button>
-                <button tabindex="0" class="tab-btn"><span class="sr-only">review menu</span></button>
+            <div class="input-boxes flex">
+                <label for="password" class="text-blue bold-1 " >Password</label>
+                <input type="password" id="password" name="password" aria-label="password" aria-required="true">
+                <p class="form-err">This field cannot be empty.</p>
+                <ul>
+                    <li id="pw-character">Password must contain at least 8 characters.</li>
+                    <li id="pw-special">Password must contain at least 1 Special character.</li>
+                    <li id="pw-cap">Password must contain at least 1 Capital word.</li>
+                    <li id="pw-num">Password must contain at least 1 Number.</li>
+                </ul>
             </div>
+
+            <div class="input-boxes flex">
+                <label for="confirm-password" class="text-blue bold-1 " >Confrim Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" aria-label="confirm password" aria-required="true">
+                <p class="form-err">This field cannot be empty.</p>
+            </div>
+
+            <button type="submit" href="#" aria-label="sign up" class="sign-up-form-btn bg-orange text-white bold-2 text-center" id="sign-up-form-btn">Sign Up</button>
+           </form>
+
+           <div class="sign-up-success-modal">
+            <h1 class="text-orange bold-1 fs-900 text-center" aria-label="Sign up form">Signing Up Successful!</h1>
+
+            <button class="dismiss-sign-up bg-orange text-blue bold-1" id="dismiss-sign-up">Dismiss</button>
+           </div>
         </section>
 
-        <!-- simplified -->
-        <section id="simplify" class="simplify">
-            <h1 class="text-white bold-1 fs-900 text-center" aria-label="How Things Work">Simplify how your team works today.</h1>
-            <a href="" aria-label="sign up" class="sign-up-btn bg-white text-orange bold-1 text-center">Get Started</a>
-           
-        </section>
-
-        <!-- footer -->
-        <footer id="contact" class="footer container grid bg-dark">
+         <!-- footer -->
+         <footer id="contact" class="footer container grid bg-dark">
             <!-- subscribe email -->
             <form action="" class="subsrcibe-form flex" autocomplete="off">
                 <input type="email" class="subscribe-email" id="subscribe-email" arai-label="subscribe email" placeholder="Updates in your inbox...">
@@ -147,7 +114,7 @@
             </div>
 
             <!-- links 2 -->
-            <div class="footer-links-2">
+            <div class="footer-links-1">
                 <ul>
                     <li><a href="#simplify" class="footer-links">Simplify</a></li>
                     <li><a href="#contact" class="footer-links">Contact</a></li>
@@ -175,7 +142,7 @@
                 <p class="text-accent">&copy; Copyright 2020. All rights reserved.</p>
             </div>
         </footer>
-
+        
     </main>
     
 

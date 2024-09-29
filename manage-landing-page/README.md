@@ -2,7 +2,7 @@
 - Sep 28, 2024
 
 # Project Ended
-- Sep 28, 2024
+- Sep 29, 2024
 
 # Tasks
 - View the optimal layout for the site depending on their device's screen size
@@ -23,5 +23,13 @@
 - JS OOP
 
 # What I Learnt
+- clip-path animation with JS
+- preventDefault() on anchors will stop to go to the content
+- tab button to each review container
 
 # Snapshots
+![desktop](./assets/snapshots/desktop.png)
+![mobile](./assets/snapshots/mobile.png)
+![navopen](./assets/snapshots/nav%20open.png)
+![sign-up-form](./assets/snapshots/sign%20up%20form.png)
+![subscribe-email](./assets/snapshots/subscribe%20mail.png)
